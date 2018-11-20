@@ -346,7 +346,6 @@ class Inception:
         Use the Inception model to classify a single image.
 
         The image will be resized automatically to 299 x 299 pixels,
-        see the discussion in the Python Notebook for Tutorial #07.
 
         :param image_path:
             The input image is a jpeg-file with this file-path.
@@ -547,8 +546,6 @@ def transfer_values_cache(cache_path, model, images=None, image_paths=None):
     be useful to cache the values through this function instead
     of calling transfer_values() directly on the Inception model.
 
-    See Tutorial #08 for an example on how to use this function.
-
     :param cache_path:
         File containing the cached transfer-values for the images.
 
@@ -600,7 +597,5 @@ if __name__ == '__main__':
 
     # Close the TensorFlow session.
     model.close()
-
-    # Transfer Learning is demonstrated in Tutorial #08.
 
 ########################################################################

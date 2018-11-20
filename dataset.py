@@ -48,28 +48,6 @@ class DataSet:
         Create a data-set consisting of the filenames in the given directory
         and sub-dirs that match the given filename-extensions.
 
-        This means there are 3 classes called: forky, knifey, and spoony.
-
-        If we set in_dir = "knifey-spoony/" and create a new DataSet-object
-        then it will scan through these directories and create a training-set
-        and test-set for each of these classes.
-
-        The training-set will contain a list of all the *.jpg filenames
-        in the following directories:
-
-        knifey-spoony/forky/
-        knifey-spoony/knifey/
-        knifey-spoony/spoony/
-
-        The test-set will contain a list of all the *.jpg filenames
-        in the following directories:
-
-        knifey-spoony/forky/test/
-        knifey-spoony/knifey/test/
-        knifey-spoony/spoony/test/
-
-        See the TensorFlow Tutorial #09 for a usage example.
-
         :param in_dir:
             Root-dir for the files in the data-set.
             This would be 'knifey-spoony/' in the example above.
@@ -315,7 +293,6 @@ def load_cached(cache_path, in_dir):
     filenames is consistent every time you load the data-set,
     for example if you use the DataSet-object in combination
     with Transfer Values saved to another cache-file, see e.g.
-    Tutorial #09 for an example of this.
 
     :param cache_path:
         File-path for the cache-file.
