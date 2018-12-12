@@ -82,8 +82,9 @@ def run():
 
         # Update the learning rate
         alpha = pow(t, -0.1)
+        print("Whats alpha: %0.02f" %alpha)
 
-        # MODIFY THIS SLEEP IF THE GAME IS GOING TOO FAST.
+        # time step
         time.sleep(0.1)
 
 
