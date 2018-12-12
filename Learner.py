@@ -82,8 +82,9 @@ def run():
 
         # Update the learning rate
         alpha = pow(t, -0.1)
-        print("Whats alpha: %0.02f" %alpha)
-
+        #print("Whats alpha: %0.02f" %alpha)
+        #print(Q)
+        
         # time step
         time.sleep(0.1)
 
